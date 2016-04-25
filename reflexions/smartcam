@@ -1,0 +1,28 @@
+Il existe de nombreux robots dans la gamme 50/300€.
+Ils ont de nombreux défauts (arduino, techos fermés, mauvaise conception...) mais il sera difficile d'en convaincre les clients (profs).
+Ces robots disposent en général de capteurs d'évitement d'obstacle et d'une odométrie simple.
+Ils sont pilotés par un micro-contrôleur (AVR -> Cortex-Mx)
+-> On ne peut pas aller beaucoup plus loin que des comportements simples type Braitenberg.
+
+Pour aller plus loin, il faut une caméra.
+Pour traiter les infos d'une caméra, il faut une archi de calcul plus puissante qu'un simple µC (ARM Cortex-Ax, PC, Zynq...).
+
+Dans l'éventualité Zynq, les traitements vidéos sont partagés entre le CPU et le FPGA.
+L'intégration de tout le soft RT (asservissements, gestion capteurs) et des périphériques capteurs/actionneurs 
+peuvent être intégrés sous forme d'un simple système soft-core, sans trop d'overhead.
+
+Finalement, en rapprochant la caméra de l'archi de calcul, ça ressemble pas mal à une Smart-Camera évoluée.
+Il s'agit donc d'une Smart-Camera à roulette en quelques sorte, puisqu'elle intégre tout ce qu'il faut pour construire un robot autour.
+Elle va devenir l'hôte de la prise de décision quant au comportement du robot.
+On peut ainsi facilement construire un robot en connectant les capteurs et actionneurs directement à la caméra.
+
+Cette vision des choses à plusieurs avantages :
+Une Smart-Camera c'est innovant, ça permet d'écrire des papiers et donc de justifier du CIR.
+Ça peut être vu comme une valorisation de ma thèse (même si je veux plus entendre parler de cette grumble de pyramide de Gaussiennes).
+Dans le modèle de l'innovation tout fermé actuel, il est difficile de voir émerger une smart-caméra réellement programmable.
+C'est pas incompatible avec mon ambition d'enseignement (ce sera beaucoup plus cher qu'une simple webcam par contre).
+
+Au niveau des défauts :
+Pierre semblait inquiet quand j'ai parlé de partir que je travaille la dessus, vis-à-vis de ce que j'ai fait à Partnering sur le sujet (finalement pas grand chose).
+Faut que je voie avec Ramesh s'il n'y a pas de problèmes de propriété intellectuelle.
+Ça ressemble un peu à ce que fait Paindavoine : http://gsensing.eu/fr

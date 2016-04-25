@@ -1,0 +1,586 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+		<!--This one seems to work all the time, but really small on ipad-->
+		<!--<meta name="viewport" content="initial-scale=0.4">-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" media="all" href="theme/css/default.css">
+		<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+		<base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+		<script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+<style>
+
+a { font-size:13px; float:right;}
+	img { margin:5px;}
+	li.c:before { content:none; }
+
+	table.no { color:black;background:none !important;
+	margin:0; padding:0; border:none;
+	}
+	table.no tr { background:none !important; }
+	table.no td { font-weight:normal; background:none !important;padding:5px; margin:0; color:black !important;}
+	table.no td:first-child { font-weight:normal;}
+
+	article { margin-top:5px !important;}
+
+article.plateformes img {
+	width:18vw;
+	border-radius:10px;
+}
+article.context img {
+	width:22vw;
+}
+
+table.full { height:100%; }
+table.full * { font-size:20px;}
+
+article.plateformes tr { background:none !important;}
+article.plateformes td { text-align:center;  width:35vw; background:none !important;}
+
+.cols { border:none;}
+.cols td { background:none !important; text-align:center; color:black; font-weight:bold; font-size:20px; border:none;}
+.cols tr { background:none !important; text-align:center; border:none;}
+.cols td:first-child {background:none !important; text-align:center; color:black; border:none;}
+
+p.citation {
+	color:rgb(0,100,170);
+	font-size:19px;
+	font-style: italic;
+	background:rgba(0,100,170,0.05);
+	padding:9px;
+	border-radius:10px;
+	box-shadow: 2px 2px 10px rgba(0,100,170,0.5);
+}
+
+
+table.big * {  font-size:25px; }
+table.full td { background:none !important;}
+table.full tr { background:none !important;}
+table.full { border-bottom: none;}
+
+.existant * {font-size:20px;}
+.existant img { margin:0;}
+
+
+.heritage * { color:rgb(0,100,170); font-size:21px; }
+.heritage ol { margin-top:10px;}
+.heritage img { border-radius:10px;}
+.smally * { font-size:17px !important; }
+
+.swot { color:black;}
+.swot h2 {font-size:30px !important; font-weight: bold; margin:0; padding:0; margin-top:-8px;}
+
+.bm * {color:black; font-size:24px;}
+.bm ul { margin-top:10px;}
+
+div.sup {position:relative;display:inline-block;top:-10px;font-size:13px; color:inherit;}
+</style>
+	</head>
+	<body style="opacity: 0">
+
+		<slides class="layout-widescreen">
+		<slide class="title-slide segue nobackground">
+		<!--    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>-->
+		<aside class="gdbar"><img src="images/logo.png" style='opacity:.2;'></aside>
+		<!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+		<hgroup class="auto-fadein">
+		<h1 data-config-title><!-- populated from slide_config.json --></h1>
+		<h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+		<p data-config-presenter><!-- populated from slide_config.json --></p>
+		</hgroup>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>STIC et éducation</h2>
+			<h3>STIC = Sciences et Technologies de l'Information et de la Communication</h3>
+		</hgroup>
+		<article>
+			<table class="no"><tr>
+				<td><img src="images/primaire.jpg" style="clear:both;float:left;width:230px;"></td><td>
+					<b style="font-size:30px;">Primaire</b><br>
+					 Maîtrise des outils numériques de base <br>(utilisation d'un ordinateur, calculatrice, tablette, ...)<br><br>
+					<b>&#8594; Simple usage</b>
+				</td></tr><tr>
+				<td>
+					<img src="images/secondaire.jpg" style="clear:both;float:left;width:230px;"></td><td>
+					<b style="font-size:30px;">Secondaire</b><br>
+					Enseignements technologiques et scientifiques <br>(concevoir un circuit éléctronique, bases de la programmation)<br><br>
+					<b>&#8594; Appréhender les mécanismes de base</b>
+				</td></tr><tr>
+				<td>
+					<img src="images/superieur.jpg" style="clear:both;float:left;width:230px;">
+					</td><td><b style="font-size:30px;">Supérieur</b><br><br>
+					Créer et innover dans les domaines clés des STIC <br>(traitement du signal, automatique, embarqué, sciences des données, mathématiques appliquées ...)<br><br>
+					<b>&#8594; Concevoir, Inventer</b>
+				</td></tr></table>
+		</article>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>STIC et Plateformes</h2>
+		</hgroup>
+		<article class="plateformes">
+			<table class="no"><tr><td>
+<img src="images/carte_dev.jpg" style="width:30vw;"><br>
+<b>Cartes de developpement</b>
+</td><td><img src="images/plateforme_meca.jpg" style="width:25vw;"><br>
+<B>Demonstrateurs, banc de test</b>
+</td></tr><tr><td>
+<img src="images/suite_logicielle.jpg" style="width:25vw;"><br>
+<B>Suites logicielles</b>
+</td><td>
+<img src="images/plateforme_robot.jpg" style="width:25vw;"><br>
+<b>Robots</b>
+</td></tr>
+</table>
+        	<a href="http://www.didalab-didactique.fr">http://www.didalab-didactique.fr</a>
+		</article>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>Contexte</h2>
+		</hgroup>
+		<article class="plateformes context">
+			<table class="no full">
+			<tr>
+				<td>
+						<img src="images/globe.PNG" style="width:20vw;"><br>
+						<b>Enjeu géo-stratégique</b><br> Monopole de quelques pays<br> sur les noyaux technologiques <br>(microélectronique, machine-learning, ...)
+				</td>
+				<td>
+					<img src="images/verrou.jpg" style="width:32vw;"><br>
+						<b>Verrouillage de Propriété Intellectuelle</b><br>Circuits, logiciels, procédés, politique de données<br>Vente liée connaissances-outil (Matlab, Wolfram)
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/recup.jpg" style="width:26vw;"><br>
+						<b>Electronique jetable à usage unique</b><br>Non-reparable, non-recyclable, non-revalorisable
+				</td>
+				<td>
+					<img src="images/accros-smartphone.jpg" style="width:30vw;"><br>
+						<b>Déresponsabilisation des utilisateurs</b><br>Disparition de la composante créative <br>(tablettes, smartphone)</b>
+				</td>
+			</tr>
+			</table>
+		</article>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>Retour d'experience</h2>
+			<h3>Programme OCDE "Connectés pour apprendre"</h3>
+		</hgroup>
+		<article>
+			<table class="full no big">
+				<tr><td width=63%><b>Hypothèse de départ : </b> 	&#171; Les outils numériques vont aider les élèves à apprendre ET comprendre &#187;
+				</td><td><div style="color:red;margin-top:15px;">&#8658;&nbsp;Échec (prévisible) !</div></td></tr>
+</table>
+<br>
+
+			<p class="citation">
+			&#171;
+			Lorsque les élèves utilisent leurs smartphones pour copier-coller des réponses toutes faites
+			aux questions qui leur sont posées, il est peu probable que leurs capacités intellectuelles s’en
+			trouvent renforcées.
+			&#187;
+		</p>
+<p class="citation">
+			&#171;
+			Combien d’enfants choisiraient de jouer
+			à un jeu vidéo s’il était de la même qualité que les logiciels que l’on trouve dans de nombreuses
+			classes du monde entier ?
+			L’impact de la technologie sur l’offre éducative reste sous-optimal, en raison de la possible
+			surestimation des compétences numériques
+			des enseignants comme des élèves, de la naïveté de la conception et de la mise en œuvre des
+			stratégies dans ce domaine, de la mauvaise compréhension de la pédagogie, ou de la piètre
+			qualité globale des logiciels et didacticiels éducatifs.
+			&#187;
+		</p>
+
+<p class="citation">
+			&#171;
+			Le fait de garantir l’acquisition par chaque enfant d’un niveau de compétences de
+			base en compréhension de l’écrit et en mathématiques semble bien plus utile pour améliorer
+			l’égalité des chances dans notre monde numérique que l’élargissement ou la subvention de
+			l’accès aux appareils et services de haute technologie.
+			&#187;
+				</p>
+
+				<p style="color:rgb(0,100,170) !important;">
+				&nbsp;&nbsp; &#8658; Absence de démarche pédagogique associée<br>
+				&nbsp;&nbsp; &#8658; Outils ternes, fermés, inutilisables</p>
+
+
+<a href="http://www.oecd.org/fr/edu/scolaire/Connectes-pour-apprendre-les-eleves-et-les-nouvelles-technologies-principaux-resultats.pdf">http://www.oecd.org/fr/edu/scolaire/Connectes-pour-apprendre-les-eleves-et-les-nouvelles-technologies-principaux-resultats.pdf</a>
+
+		</article>
+		</slide>
+
+
+		<slide>
+		<hgroup>
+			<h2>Manque Identifié</h2>
+		</hgroup>
+		<article class="bm">
+			<br>
+			<div style="background:linear-gradient(rgba(0,100,170,0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(0,100,170);">Savoir-faire historiques (XX<div class="sup">ème</div> siècle)</b><br>
+				<table class="no full" style="margin-bottom:-10px;"><tr><td>
+					<ul>
+						<li>Programmation</li>
+						<li>Algorithmique</li>
+						<li>Mathématiques appliquées</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Electronique</li>
+						<li>Automatique</li>
+						<li>Systèmes complexes</li>
+					</ul>
+				</td></tr></table>
+				<div style="float:right; background:rgb(0,100,170); color:white; padding:7px; border-radius:10px;margin:0;margin-right:-20px;">Demarche par diffusion</div>
+				<div style="color:rgb(0,100,170);"> &#8618; Connaissances ouvertes accessibles <span style="font-size:16px;color:rgb(0,100,170);">(web, documentation)</span></div>
+				<div style="color:rgb(0,100,170);"> &#8618; Plateformes libres populaires</div>
+				<div></div>
+			</div>
+
+			<div style="background:linear-gradient(rgba(255, 0, 0, 0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(200,0,0);">Savoir-faire inédits (XXI<div class="sup">ème</div> siècle)</b><br>
+				<table class="no full" style="margin-bottom:-10px;"><tr><td>
+					<ul>
+						<li>Hardware programmable</li>
+						<li>Architectures massivement parallèles</li>
+						<li>Vision par ordinateur, reconnaissance de formes</li>
+					</ul>
+				</td><td><ul>
+						<li>Machine Learning, data-mining</li>
+						<li>Sciences cognitives appliquées</li>
+					</ul></td></tr></table>
+					<div style="color:rgb(200,0,0);">&#8618; Reservés aux spécialistes <span style="font-size:16px;color:inherit;">(R&amp;D, labos, journaux scientifiques)</span></div>
+					<div style="color:rgb(200,0,0);">&#8618; Ressources ouvertes rares <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:16px;color:inherit;">(payantes, jargon, travaux non-reproductibles ou cible-spécifiques)</span></div>
+					<div style="float:right; background:rgb(200,0,0); color:white; padding:7px; border-radius:10px;margin:0;margin-right:-20px;">Demarche par offuscation</div>
+					<div style="color:rgb(200,0,0);margin-top:10px;"><b style="color:inherit;font-size:30px;">&#8618; Plateformes ouvertes inexistantes !</b></div>
+			</div>
+		</article></slide>
+
+
+		<slide>
+		<hgroup>
+			<h2>Un robot modulaire</h2>
+			<h3>Plate-forme ouverte d'enseignement pluridisciplinaire</h3>
+		</hgroup>
+		<article>
+		<table class="cols"><tr><td>(i) Prix abordable</td><td>(ii) Technologies ouvertes</td><td>(iii) Ressources pédagogiques associées</td></tr></table>
+		<div style="background:rgba(0,100,170,0.05); border-radius:15px; color:rgb(0,100,170); padding:10px;padding-bottom:5px; margin-bottom:1px;font-size:90%;">
+			<b>Pourquoi un robot mobile ?</b><br><br>
+			<ul>
+				<li>Pluridisciplinarité technologique (signal, RTOS, automatique, apprentissage...)</li>
+				<li>Se confronter aux réalités physiques &#8658; sortir des modèles simulés</li>
+				<li>Mobilité &#8658; sortir de la classe, travailler "sur le terrain"</li>
+				<li>Dimension ludique</li>
+			</ul>
+		</div>
+		<br>
+		<div style="background:rgba(0,255,0,0.05); border-radius:15px; color:rgb(0,170,0); padding:10px;padding-bottom:1px;font-size:80%;">
+			<b>Créer et animer une communauté d'utilisateurs</b><br><br>
+					<ul><li>Enseignants, hobbyists, ingénieurs, ...</li>
+						<li>Contrer les cercles vicieux des licences via l'open-hardware, l'open-source et le logiciel libre.</li>
+						<li>Modèle contributif</li>
+					</ul>
+			</div>
+		</article>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>L'existant</h2>
+		</hgroup>
+		<article class="plateformes existant">
+			<table class="no big"><tr><td width="30%">
+<img src="images/arduinobot2.jpg"><br>
+<table class="no big" style="border:none;"><tr><td>
+<b>Robots jouets</b></td><td><span style="font-size:15px;">Arduino-bots, Raspberry-bots</span><br>
+</td></tr><tr><td colspan=2><div style="color:rgb(100,0,0);font-size:18px;">Usage pédagogique limité</div></td></tr></table>
+</td><td><img style="width:70%"; src="images/atlas.jpg"><br>
+	<table class="no big" style="border:none;"><tr><td>
+	<b>Robots de recherche</b></td><td><span style="font-size:15px;">Bia, Honda, Boston dynamics</span><br>
+	</td></tr><tr><td colspan=2><div style="color:rgb(100,0,0);font-size:18px;">Monstrueusement cher</div></td></tr></table>
+</td></tr><tr><td width="30%">
+<img style="width:70%" src="images/rumba.jpg"><br>
+<table class="no big" style="border:none;"><tr><td>
+<b>Robotique de services</b></td><td><span style="font-size:15px;">iRobot, Partnering, Blue Frog</span><br>
+</td></tr><tr><td colspan=2><div style="color:rgb(100,0,0);font-size:18px;">Usage specifique</div></td></tr></table>
+</td><td style="margin:30px; border-radius:20px; color:green;">
+<div style="background:rgba(0,255,0,0.1);padding:20px;border-radius:10px;"<b>Segment ouvert</b><br><br>
+<span style="font-size:35px;color:green;">Robots modulables<br> pour l'éducation<br> et les hobbyists</span></div>
+</td></tr>
+</table>
+		</article>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>L'heritage</h2>
+		</hgroup>
+		<article class="heritage">
+				<div style="background:linear-gradient(rgba(0,100,170,0.2),transparent);border-radius:15px; padding:20px; margin:10px; ">
+
+					<b>Logiciel libre - Free Sofware Foundation <img style="float:right;width:100px;" src="images/fsf.png"></b><br>
+					<ol><li>&nbsp;1. Liberté d'utiliser le logiciel</li>
+					<li>&nbsp;2. Liberté de copier le logiciel</li>
+					<li>&nbsp;3. Liberté d'étudier le logiciel</li>
+					<li>&nbsp;4. Liberté de modifier le logiciel et de redistribuer les versions modifiées</li>
+				</ol>
+				</div>
+				<div style="background:linear-gradient(rgba(0,100,170,0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+					<img src="images/aspi.png" style="width:50px;float:right;">
+					<img src="images/ardui.png" style="width:50px;float:right;">
+					<img src="images/eclipse.jpg" style="width:50px;float:right;">
+					<b>Fondations logicielles (USA), Charities, Modèles participatifs</b><br>
+ 						Arduino, Raspberry Pi Foundation, <br>Fondation Eclipse
+				</div>
+				<div style="background:linear-gradient(rgba(0,100,170,0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+					<img src="images/beagle.png" style="width:180px;float:right;">
+					<b>Initiatives libres de grandes compagnies</b><br>
+						Beagle Board (Texas Instruments)
+				</div>
+
+				<div style="background:linear-gradient(rgba(0,100,170,0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+					<img src="images/openhard.png" style="width:180px;float:right;">
+
+					<b>Open hardware</b><br>
+					<ol><li>&nbsp;5. Liberté de fabriquer et distribuer du matériel basé sur le plan</li>
+					<li>&nbsp;6. Liberté d'acceder aux sources de la conception</li>
+					<li>&nbsp;7. Composants facilement approvisionnables, procédés standards, infrastructures ouvertes</li>
+					<li>&nbsp;8. Exploitation d'outils de conception open-source</li>
+				</ol>
+				</div>
+		</article>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>Business Model</h2>
+		</hgroup>
+		<article class="bm">
+			<br>
+			<div style="background:linear-gradient(rgba(0,100,170,0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(0,100,170);">Activités</b><br>
+					<ul>
+						<li>Développement matériel et logiciel</li>
+						<li>Animation communauté</li>
+						<li>Formations et interventions en milieu scolaire</li>
+					</ul>
+			</div>
+
+			<div style="background:linear-gradient(rgba(53, 219, 0, 0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(30,150,0);">Segments consommateurs</b><br>
+					<ul>
+						<li>Écoles</li>
+						<li>Étudiants</li>
+						<li>Hobbyists</li>
+						<li>Laboratoires de recherche</li>
+						<li>Milieu culturel et associatif, animation</li>
+					</ul>
+			</div>
+		</article></slide>
+
+		<slide>
+		<hgroup>
+			<h2>Business Model (2)</h2>
+		</hgroup>
+		<article class="bm">
+			<br>
+			<div style="background:linear-gradient(rgba(0, 201, 209, 0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(0, 101, 109);">Ressources</b><br>
+					<ul>
+						<li>Lien établissements publics</li>
+						<li>Fablabs</li>
+						<li>Mise à disposition plateformes laboratoire (ETIS, ENSEA, UCP)</li>
+						<li>Communauté, base de connaissance animée, contributeurs</li>
+					</ul>
+			</div>
+
+			<div style="background:linear-gradient(rgba(20, 0, 170, 0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(40, 0, 120)">Politique de prix</b><br>
+					<ul>
+						<li>Prix d'appel ~ 300€</li>
+						<li>Formation au taux HETD</li>
+					</ul>
+			</div>
+
+		</article></slide>
+		<slide>
+		<hgroup>
+			<h2>Business Model (3)</h2>
+		</hgroup>
+		<article class="bm">
+			<br>
+
+			<div style="background:linear-gradient(rgba(255, 255, 0, 0.3),transparent);border-radius:15px; padding:20px; margin:10px;">
+				<b style="color:rgb(110, 110, 0);">Canaux</b><br>
+					<ul>
+						<li>Concours</li>
+						<li>Maker faires</li>
+						<li>Communication universitaire</li>
+						<li>Evenements culturels/scientifiques (conférences, vulgarisation scientifique)</li>
+					</ul>
+			</div>
+
+			<div style="background:linear-gradient(rgba(170, 0, 170, 0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(120, 0, 120);">Relations consommateurs</b><br>
+					<ul>
+						<li>Relation participative donnant-donnant</li>
+						<li>Support en ligne, fiches TP</li>
+						<li>Formations</li>
+					</ul>
+			</div>
+
+
+		</article></slide>
+		<slide>
+		<hgroup>
+			<h2>Business Model (4)</h2>
+		</hgroup>
+		<article class="bm">
+			<div style="background:linear-gradient(rgba(255,150,0,0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(200,100,0);">Coûts</b><br>
+					<ul>
+						<li>Recherche et Developpement prototype</li>
+						<li>Composants, matières premières</li>
+						<li>Prestations industrielles (<i>e.g.</i> mécatronique)</li>
+						<li>Salaires</li>
+						<li style="text-decoration:line-through;">Protection innovation et marque</li>
+						<li style="text-decoration:line-through;">Publicité et relations médias</li>
+					</ul>
+			</div>
+
+			<div style="background:linear-gradient(rgba(0,100,170,0.2),transparent);border-radius:15px; padding:20px; margin:10px;">
+
+				<b style="color:rgb(0,100,170);">Revenus</b><br>
+					<ul>
+						<li>Vente plateformes</li>
+						<li>Financement participatif</li>
+						<li>Contrats de co-developpement</li>
+						<li>Leasing</li>
+						<li>Interventions</li>
+					</ul>
+			</div>
+
+
+		</article>
+		</slide>
+
+		<slide>
+		<hgroup>
+			<h2>Matrice SWOT</h2>
+		</hgroup>
+		<article class="smally swot">
+			<div style="float:left;width:60%;">
+					<div style="background:linear-gradient(rgba(0,255,0,0.2),transparent);border-radius:15px; padding:8px; margin:5px;">
+					<h2 style="color:rgb(0,140,0)">Forces</h2>
+					<ul>
+						<li>Experience : Enseignement superieur (concepteurs = utilisateurs), Coupes de robotique, Ingenieurs R&D robotique, Auto-entreprise numérique</li>
+						<li>Docteurs en STIC, thématiques complémentaires (maîtrise technos soft/hard)</li>
+						<li>Pas de coûts d'infrastructure. Peu de stock (flux tendu)</li>
+						<li>Indépendant de toute technologie propriétaire <br>&nbsp;&nbsp;→ Réadaptation aisée aux mutations technologiques</li>
+						<li>Modularité = personnalisable</li>
+						<li>Contacts écoles, universités, collègues chercheurs, milieu associatif</li>
+						<li>Promesses d'achat</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+
+			<div style="float:right;width:40%;margin-top:0px;">
+				<div style="background:linear-gradient(rgba(255,100,0,0.2),transparent);border-radius:15px; padding:8px; margin:5px;">
+							<h2 style="color:rgb(200,80,0)">Faiblesses</h2>
+							<ul>
+								<li>Modèle de PI inhabituel<br>&nbsp;&nbsp; → absence de levier technologique</li>
+								<li>Deficit profil technico-commercial</li>
+								<li>Apport initial</li>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<div style="float:right;width:40%;margin-top:60px;">
+						<div style="background:linear-gradient(rgba(255,0,0,0.2),transparent);border-radius:15px; padding:8px; margin:5px;">
+						<h2 style="color:rgb(200,0,0)">Menaces</h2>
+						<ul>
+							<li>Amalgame avec segments proches (robotique jouet, kits de developpement)</li>
+							<li>Emergence du segment "robotique domestique" (service → hobby → éducation)</li>
+							<li>Démocratisation des prix dans les marchés voisins → petite série vs grandes industries implantées</li>
+							<li>Noyaux technologiques propriétaires incontournables (<i>e.g.</i> FPGA)</li>
+						</ul>
+					</div>
+				</div>
+
+			<div style="float:left;width:60%;">
+				<div style="background:linear-gradient(rgba(0,50,255,0.2),transparent);border-radius:15px; padding:8px; margin:5px;">
+			<h2 style="color:rgb(0,10,100)">Opportunités</h2>
+			<ul>
+				<li>Outils professionnels utilisables gratuitement si pour du libre (<i>e.g.</i> Altium)</li>
+				<li>Actualité favorable : Nouvelles directives gouvernementales en faveur du libre dans l'education, resultats enquêtes OCDE</li>
+				<li>Tissu local favorable : Forte implication des collectivités locales (<i>e.g.</i>Futur en seine)</li>
+				<li>Status JEU/JEI, CIR, Jeunes Docteurs</li>
+				<li>Fablabs à proximité</li>
+			</ul>
+			</div>
+		</div>
+
+		</article>
+		</slide>
+
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

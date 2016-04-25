@@ -1,0 +1,24 @@
+6 cell NiMH: 6V (1V/c) -> 7.2V(1.2V/c) -> 9.6V(1.6V/c)
+
+Discharged cell: 1V/c -> 6V
+Nominal cell: 1.2V/c -> 7.2V
+Maximal cell: 1.6V/c -> 9.6V
+
+RPM -> m/s:
+v_robot = d_wheel*pi*RPM/(60*1000)
+
+Nm -> m/s^2:
+a_max = 4.C_motor/(p_robot.d_wheel)
+p_robot = 4.C_motor/(a_max.d_wheel)
+
+Motor NOVA (60mm dia. wheel):
+500RPM -> 1.57m/s = 5.65km/h
+
+84 oz-in = 593mNm -> 3.95m/s^2 !?
+1m/s^2 -> 39.5kg
+
+a_max=0.5m/s^2, d_wheel=0.06m, p_robot=5kg
+c_motor = a_max*p_robot*d_wheel/4 = 0.0375Nm = 37.5mNm = 0.382kg.cm = 5.31oz.in
+
+http://www.gotronic.fr/art-motoreducteur-34-1-encodeur-rs003-24295.htm
+

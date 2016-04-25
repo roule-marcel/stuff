@@ -1,0 +1,11 @@
+V_lin = V_ang * r_wheel
+acc = 2*C_mot/(r_wheel*m_robot)
+
+V_ang = V_lin / r_wheel
+C_mot = acc * r_wheel * m_robot / 2
+
+Power = C_mot * V_ang
+= acc * r_wheel * m_robot * V_lin / (2 * r_wheel)
+= acc * m_robot * V_lin / 2
+
+acc = 2 * Power / (m_robot * V_lin)
