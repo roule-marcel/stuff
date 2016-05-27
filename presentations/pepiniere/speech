@@ -1,0 +1,126 @@
+Bonjour, je suis Laurent Fiack et je vais vous présenter le projet Marcel,
+qui s'articule autour d'un robot mobile et modulaire, destiné à l'éducation et la recherche scientifique.
+À travers ce robot, notre objectif est de participer à la démocratisation de la robotique de laboratoire.
+
+Alors qu'est-ce que j'entends par "démocratiser la robotique de laboratoire" ?
+
+Tout d'abord, qu'est-ce  qu'un laboratoire ?
+
+Quand on parle de labo, on pense en général à un labo de recherche, 
+c'est à dire un endroit on réalise des expériences, pour faire avancer la connaissance, ou la technologie.
+Mais au sens plus général, c'est un lieu prévu pour expérimenter.
+
+Dans les universités des pays germaniques et anglo-saxons, 
+on appelle aussi "laboratoire" les séances de travaux pratiques.
+Ici les étudiants expérimentent pour mieux comprendre les thématiques vues en cours.
+
+On n'a pas frocément besoin d'être étudiant ou chercheur pour vouloir expérimenter.
+On a ainsi vu émerger récemment de nouveaux lieux d'expérimentation, il s'agit des fablabs.
+
+Et puis, il n'y a pas d'age pour expérimenter.
+
+Maintenant qu'on a vu ce que signifiait "laboratoire" dans son sens le plus large, voyons le terme "démocratiser".
+On va prendre l'exemple de la bonne vieille Peugeot 103, qui s'est démocratisé à l'époque, 
+à travers plusieurs aspects.
+L'aspect le plus évident, c'est son accessibilité en terme de prix, 
+ce qui a permis au plus grand nombre de se la procurer.
+L'autre aspect, un peu moins évident, c'est la capacité qu'on avait de la démonter, pour la réparer ou la modifier, en allant acheter des pièces détachés chez le garagiste du coin.
+Tout ça a permis aux plus acharnés de comprendre comment fonctionnait leur mob.
+
+Prenons un autre exemple : bon, ça a pas l'air bien démocratique tout ça.
+Ça coûte cher, il faut un tournevis spécial pour l'ouvrir, l'électronique est pas lisible, 
+on a pas accès au soft.
+En bref c'est tout fermé.
+
+Pourtant, en achentant quelques pièces détachés en ligne, on peut en construire une sois-même.
+On en a pour moins d'une 100aine d'euros, on comprends un peu mieux comment ça marche, 
+et on peut l'adapter à nos besoins.
+
+Les fondamentaux que je viens d'énoncer font directement echo aux quatre libertés du logiciel libre.
+L'utilisateur peut exécuter le programme
+L'utilisateur peut en comprendre le fonctionnement
+L'utilisateur peut modifier le programme
+L'utilisateur peut redistribuer le programme
+
+Ces libertés peuvent également s'appliquer au matériel, on parle alors d'Open Hardware.
+
+Transposons maintenant tout ça à la robotique. Alors là, on est dans le labo, on est dans l'expérimentation.
+Est-ce que c'est accessible ?
+Est-ce que c'est compréhensible ?
+Est-ce que c'est réparable ? 
+Ou encore modifiable ?
+
+Dans quelques années, on aura des robots dans la rue, et ces robots seront bourrés de capteurs.
+Et comme tout sera verrouillé par quelques grosses boites, 
+on ne saura pas trop ce qu'ils font de toutes ces données.
+Bon, je sais pas vous, mais moi cette direction elle me plait pas trop.
+
+Je pense que pour inverser cette tendance, il y a deux points cruciaux à aborder :
+Tout d'abord, redonner le contrôle à la recherche scientifique ACADÉMIQUE.
+C'est à dire leur donner la possibilité de comprendre et de modifier leurs propres plateformes de travail.
+Ensuite, évidemment permettre aux étudiants de travailler sur des plateformes ouvertes et performantes.
+
+C'est dans ce cadre qu'on a imaginé le robot Marcel.
+C'est un robot mobile modulaire, c'est à dire qu'on doit pouvoir facilement lui ajouter des périphériques, 
+comme de nouveaux capteurs ou actionneurs. Il doit donc disposer d'interfaces standard.
+Il doit aussi pouvoir s'interfacer avec des solutions logicielles déjà en place.
+Ensuite il doit être suffisament performant pour expérimenter des problématiques intéressantes.
+Et évidemment, on veut qu'il soit abordable et 100% hackable.
+
+À côté de ce robot, on aimerait construire et animer une communauté d'utilisateurs partageant leur expérience et leurs projets, à l'image des communautés Arduino et Raspberry, assez liés au mondes des fablabs dont j'ai parlé un peu plus tôt.
+(5min)
+
+On est actuellement deux sur ce projet, Jérôme Fellus, actuellement doctorant en machine learning et en CDD à l'UCP et moi-même, docteur en architectures numériques et actuellement au chomage.
+Je vais pas détailler nos CV respectifs, mais on dispose de compétences complémentaires, 
+et à nous deux on couvre une bonne partie des domaines scientifiques et techniques qui composent la robotique.
+
+L'écosystème
+Marcel ce n'est pas juste un produit.
+On s'inscrit dans un écosystème déjà fonctionnel, on vient aider à renforcer les liens existants.
+- On se fournit au mêmes endroits que les utilisateurs, et on travaille avec les mêmes outils
+- On vend les plateformes aux Labos et aux Départements d'enseignement.
+- On effectue des formations
+- On peut travailler en co-développement pour les besoins spécifiques des Labos
+
+Communication
+- Réseau thèse
+- Évènements culturels/scientifiques
+
+L'exixtant
+-> Connaissance du marché
+
+Le Modèle de prix
+-> L'offre
+
+===============================================================================================================
+Résumé projet
+- Robot mobile -> plateforme d'expérimentation
+- Enseignement, recherche scientifique, (divertissement?)
+- Ludique, pluri-disciplinaire, disciplines technologiques
+- Mutualisation entre Enseignants et Enseignement/Recherche -> Économies €€€
+- Modulaire -> Adaptable aux besoins
+- Gestion communauté 
+- Modèle contributif (soft+hard open)
+
+L'équipe
+- Compétences complémentaires
+- Couvre les disciplines en relation avec la robotique
+
+Connaissance du marché
+- Arduinobots
+- Paralax
+- Enova robotics
+- Robosoft
+
+Analyse besoin et offre actuelle
+- Évolution techo et usure -> besoin constant
+- Verrouillage techno des concurrents limitent le potentiel d'experimentations et de mutualisation -> €€€
+
+L'offre (positionnement, avantage concurrentiel)
+- Segment 800boules
+
+La stratégie commerciale envisagée
+- Politique de prix : <800€ -> Frais de fonctionnement
+- Communication : Réseau thèse (univ+labo), évènement culturels/scientifiques
+- Distribution : RS, Farnell, Robotshop...
+
