@@ -197,6 +197,54 @@
 	\includegraphics[width=0.6\linewidth]{figures/functions_rt}
 }
 
+\frame{
+	\frametitle{Architecture de calcul}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/zynq_blockdiagram.jpg}
+}
+
+\frame{
+	\frametitle{Architecture de calcul}
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/zynq_inside}
+}
+
+\frame{
+	\frametitle{Architecture uC-RT}
+	\begin{minipage}[b]{0.6\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/uc-rt}
+		\begin{block}{Périphériques}
+			\begin{itemize}
+				\item Instanciation dans \texttt{top.vhd}
+				\item "\texttt{system.h}"
+			\end{itemize}
+		\end{block}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.35\linewidth}
+		\begin{block}{Memory Map}
+			\begin{itemize}
+				\item @0 ... @P
+				\item @P ... @P+D
+				\item @FFFF-C ... @C
+			\end{itemize}
+		\end{block}
+		\begin{block}{Impact sur...}
+			\begin{itemize}
+				\item \texttt{omsp\_defines.v}
+				\item \texttt{link.ld}
+			\end{itemize}
+		\end{block}
+	\end{minipage}
+}
+
+\frame{
+	\frametitle{Organisation Code ?}
+	\centering
+	???
+}
+
 %%\section[Short Title 1]{Long Title 1}
 %%\subsection{Subsection 1}
 %%\frame{
