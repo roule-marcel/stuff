@@ -1,0 +1,244 @@
+%%%%%%%%%%%%  modele.tex
+% exemple d'utilisation de la classe 
+% etisbeamer.cls
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[miniframe]{marcelbeamer}
+%\documentclass[handout]{etisbeamer}
+%%%%%%%%%%%%% option de la classe etisbeamer.cls
+% toutes les options standards de la classe beamer
+% le type d'en-tete pour l'appel des sections : 
+%  - default : currentsection | currentsubsection
+%  - miniframe : sections + puces
+%  - tree : sections + currentsubsection
+%  - split : sections + subsections
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%% appel des packages
+\usepackage[english]{babel}
+\usepackage{epsfig}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern} 
+\usepackage{times}
+\usepackage{multirow}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{movie15}
+\usepackage{wasysym}
+\usepackage[squaren, Gray, cdot]{SIunits}
+
+\usepackage{tabularx}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\newcommand{\backupbegin}{
+	\newcounter{framenumberappendix}
+	\setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+	\addtocounter{framenumberappendix}{-\value{framenumber}}
+	\addtocounter{framenumber}{\value{framenumberappendix}} 
+}
+
+%\usepackage{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newlist{fleche}{itemize}{1}
+%\setlist[fleche]{label=$\rightarrow$,font=\color{blue}}
+
+
+%\newcommand{\smiley}{\tikz[baseline=-0.75ex,black]{
+%		    \draw circle (2mm);
+%			\node[fill,circle,inner sep=0.5pt] (left eye) at (135:0.8mm) {};
+%			\node[fill,circle,inner sep=0.5pt] (right eye) at (45:0.8mm) {};
+%			\draw (-145:0.9mm) arc (-120:-60:1.5mm);
+%			    }
+%			}
+
+\newcommand{\orto}{^{\circ}}
+
+%%%%%%%%%%%%% appel du plan a chaque subsection
+%% en 1 colonne
+
+%\AtBeginSection[]{
+%	\frame{%<handout:0>{
+%	\frametitle{Plan}
+%  \begin{columns}[t]
+%  \begin{column}{0.5\linewidth}
+%  \tableofcontents[sections={1-3}, currentsection,subsectionstyle=show/show/shaded]
+%  \end{column}
+%  \begin{column}{0.5\linewidth}
+%  \tableofcontents[sections={4-6}, currentsection,subsectionstyle=show/show/shaded]
+%  \end{column}
+%  \end{columns}
+%  }
+%}
+
+%% ou en 2 colonnes s'il y a trop de sections
+    
+%\AtBeginSubsection[]{
+%	\frame{%<handout:0>{
+%	\frametitle{Summary}
+%  \begin{columns}[t]
+%  \begin{column}{0.5\linewidth}
+%  \tableofcontents[sections={1-6},currentsection, subsectionstyle=show/shaded/hide]
+%  \end{column}
+%  \begin{column}{0.5\linewidth}
+%  \tableofcontents[sections={7-12},currentsection,subsectionstyle=show/shaded/hide]
+%  \end{column}
+%  \end{columns}
+%  }
+%}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%%%%%%%%%%%%% Pour supprimer les symboles de navigation
+\setbeamertemplate{navigation symbols}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%% Personnalisation des theoremes
+\newtheorem{theoreme}{Th\'eor\`eme}
+\newtheorem{preuve}{D\'emonstration}
+\newtheorem{define}{D\'efinition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+		
+%%%%%%%%%%%%%% Infos personnelles au document	
+%\title[Auto-organisation matérielle]{Les effets de l’environnement sur le développement
+%et l'organisation d'architectures de traitement matériel auto-organisées}
+%%\subtitle{Première année de thèse}
+%\author[L.Fiack]{Laurent Fiack\\\tiny{\\Thèse dirigée par Benoît Miramond}}
+%%\email{}
+%\institute[ETIS]{\textit{ETIS / ENSEA - Universit\'e de Cergy-Pontoise - CNRS UMR 8051 \\
+%F-95000 Cergy-Pontoise Cedex, France}\\\\\textup{Financement :} Communauté d'Agglomération de Cergy-Pontoise}
+%\date[2 décembre 2015]{}%\today]{}
+%\logo{}%\includegraphics[height=0.1\textheight]{image}\hspace{1em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%% Infos personnelles au document	
+\title[Électronique]{Électronique}
+\subtitle{Tout ce qui faut pour faire rouler un robot}
+\author[L. Fiack]{Laurent Fiack}
+%\email{example@email.com}
+\institute[MARCEL]{\textit{MARCEL - Address}}
+\date[\today]{}
+%\logo{}%\includegraphics[height=0.1\textheight]{image}\hspace{1em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\figpath}{figures/}
+
+\begin{document}
+
+%%%%%%%%%%%%% Background des slides	
+\usebackgroundtemplate{}
+%% cet option permet d'ins\'erer une image en fond-ecran
+%% la commande \usebackgroundtemplate{} permet de
+%% supprimer le fond a partir du moment ou il est 
+%% appele
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+%%%%%%%%%%%%% frame title
+\frame{\titlepage}
+\usebackgroundtemplate{}
+%\logo{}
+%\logoheader{taille}{emplacement-image}
+%% on supprime les logos des autres frames		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\frame{
+%	\textcolor{blue1}{
+%	\begin{tabular}{lllll}
+%		Rapporteur  &:&B. Granado &-&LiP6\tabularnewline
+%		Rapporteur &:&M. Paindavoine &-&LEAD\tabularnewline
+%		Examinateur &:&S. Viollet &-&ISM\tabularnewline
+%		Examinateur &:&N. Cuperlier &-&ETIS\tabularnewline
+%		Examinateur &:&A. Upegui &-&InIT\tabularnewline
+%		Directeur   &:&B. Miramond &-&LEAT\tabularnewline
+%	\end{tabular}}
+%}
+
+\section[1. NOVA]{Première version : tout piquer à NOVA}
+\subsection{NOVA}
+\frame{
+	\frametitle{Première version : tout piquer à NOVA}
+	\centering
+	\includegraphics[width=0.8\linewidth]{./figures/elec_from_nova}
+}
+
+\frame{
+	\frametitle{BOM}
+	\begin{itemize}
+		\item M$_L$ et M$_R$ : Motoréducteurs Pololu [\href{http://www.nova-robotics.fr/mediawiki/index.php?title=Moteur_et_mécanique_2013-2014}{Wiki}]
+		\item H-bridge : Carte moteur 2012-2013 [\href{http://www.nova-robotics.fr/mediawiki/index.php?title=Carte_moteur}{Wiki}]
+		\item BT HC05 : Module bluetooth [\href{http://www.nova-robotics.fr/mediawiki/index.php?title=Carte_mère_2013-2014\#Bluetooth}{Wiki}]
+		\item DE0-Nano : Carte FPGA
+		\item TI 5V : Alimentation à découpage 
+		\item TI 9V : Alimentation à découpage 6A PTN78020WAD/WAH [\href{http://www.nova-robotics.fr/mediawiki/index.php?title=Électronique_2014-2015\#Alimentation_AX-12}{Wiki}]
+		\item AX12/XL320 : Servo-moteurs numériques
+		\item US : Télémètre ultrason SRF-O5
+	\end{itemize}
+}
+
+\frame{
+	\frametitle{Connectique}
+	\begin{itemize}
+		\item M$_L$ et M$_R$ : barrette sécable 6 broches
+		\item VBAT : 2x Bornier
+		\item AX12 : Molex (attention 2mm)
+		\item US : barrette sécable 4 broches\\
+		\item DE-Nano : wrappé \#YOLO
+		\item H-bridge : pistocollé \#SWAG
+	\end{itemize}
+}
+
+
+%%\section[Short Title 1]{Long Title 1}
+%%\subsection{Subsection 1}
+%%\frame{
+%%	\frametitle{Subsection 1.1}
+%%}
+%%
+%%\frame{
+%%	\frametitle{Subsection 1.2}
+%%}
+%%
+%%\subsection{Subsection 2}
+%%\frame{
+%%	\frametitle{Subsection 2.1}
+%%}
+%%
+%%\frame{
+%%	\frametitle{Subsection 2.2}
+%%}
+%%
+%%\section[Short Title 2]{Long Title 2}
+%%\subsection{Subsection 1}
+%%\frame{
+%%	\frametitle{Subsection 1.1}
+%%}
+%%
+%%\frame{
+%%	\frametitle{Subsection 1.2}
+%%}
+%%
+%%\subsection{Subsection 2}
+%%\frame{
+%%	\frametitle{Subsection 2.1}
+%%}
+%%
+%%\frame{
+%%	\frametitle{Subsection 2.2}
+%%}
+%%
+%%\appendix
+%%\backupbegin
+%%
+%%\frame{
+%%	\frametitle{Backup 1}
+%%}
+%%
+%%\frame{
+%%	\frametitle{Backup 2}
+%%}
+%%
+%%\backupend
+\end{document}
