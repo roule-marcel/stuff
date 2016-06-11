@@ -22,7 +22,7 @@ Différentes versions en fonction de l'interlocuteur
 * Les moyens à mettre en oeuvre
 
 * Le statut juridique
-* La structure du capital
+* La structure du capital/Budget prévisionnel
 * Le chiffrage du projet
 * Les perspectives d'avenir
 
