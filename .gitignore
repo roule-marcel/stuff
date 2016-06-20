@@ -1,0 +1,9 @@
+presentations/archi_rt/figures/*.pdf
+presentations/elec/figures/*.pdf
+
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
