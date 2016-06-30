@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage{palatino}
+\usepackage{titlesec} %Nécessaire pour supprimer le mot chapitre
+\usepackage[T1]{fontenc}
+%\usepackage[francais]{babel}
+\usepackage[french]{babel}
+%\usepackage[english]{babel}
+\usepackage[autolanguage,np]{numprint}
+\usepackage{graphicx} %Pour insérer des images
+\usepackage{float}
+\usepackage{amsmath} 
+\usepackage[absolute]{textpos}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage[top=3.5cm,bottom=3.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{} %Supprime le mot chapitre
+\usepackage{eurosym}
+
+\usepackage{color}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{0.5cm}
+
+\makeatletter\renewcommand{\thesection}{\@arabic\c@section}
+\makeatother
+
+\newcommand{\figpath}{figures}
+
+\newcommand{\address}{Neuvitec 95, Mail Gay Lussac -- 95000 Neuville-sur-Oise, FRANCE}
+
+\begin{document}
+
+\input{title}
+
+\section{Executive Summary}
+(Résumé) : Une page ou deux grand max
+\section{Les créateurs}
+Bilan personnel, points forts points faibles
+\section{Le projet}
+\section{Le Business Model}
+\subsection{Étude de marché}
+Étude documentaire (panorama du marché), ouverture internationale
+\subsection{Étude de la concurrence}
+Concurrents directs, concurrents indirects
+\subsection{Premier positionnement}
+Couple produit-marché
+\subsection{L'étude terrain}
+\subsection{Chiffre d'affaires prévisionnel}
+\subsection{Le Business Model}
+\section{La technologie et sa protection}
+\section{La stratégie marketing}
+\section{Les moyens à mettre en oeuvre}
+\section{Le statut juridique}
+\section{La structure du capital/Budget prévisionnel}
+\section{Le chiffrage du projet}
+\section{Les perspectives d'avenir}
+
+\end{document}
