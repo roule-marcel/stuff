@@ -10,10 +10,10 @@ Durant cette période, j'ai constaté pas mal de problèmes au niveau des plate-
 Par exemple les cartes électroniques qu'on utilisait en TP étaient vétustes et peu attractive pour les étudiants.
 Les étudiants, ingénieurs notamment, se placent de plus en plus en tant que simples utilisateurs de ces technologies plutôt que dans un rôle de créateur, d'innovateur.
 
-C'est avec cette problématique en tête qu'avec un copain on a imaginé le robot Marcel.
-On établit notre activité dans le Val d'Oise pour continuer de travailler en collaboration avec nos anciennes écoles et laboratoires de recherche.
+C'est avec cette problématique en tête qu'avec un copain on a imaginé le robot Marcel,
+et on établit notre activité dans le Val d'Oise pour continuer de travailler en collaboration avec nos anciennes écoles et laboratoires de recherche.
 
-Marcel est un robot mobile et modulaire, c'est à dire qu'on doit pouvoir facilement lui ajouter des périphériques, comme de nouveaux capteurs ou actionneurs.
+Donc, Marcel est un robot mobile et modulaire, c'est à dire qu'on doit pouvoir facilement lui ajouter des périphériques, comme de nouveaux capteurs ou actionneurs.
 
 Pendant la préparation de mon doctorat, j'ai également côtoyé le monde de la recherche scientifique.
 De ce côté, on a des plate-formes de recherche, qui posent également quelques soucis, particulièrement en robotique.
