@@ -55,5 +55,17 @@ uniquement.
 Durée : 99 ans à compter de
 l’immatriculation au RCS de PONTOISE 
 
-# TODO
-Vote pour faire rentrer un associé (et donc vendre parts).
+# Pièces à fournir
+## Laurent chomage
+Demande d'ACCRE (Cerfa 13584*02)
+Notification d'ouverture de droit à l'indemnité chômage
+## Laurent et Jérôme
+Justificatif de domicile
+Pièce d'identité
+## Marcel
+M0
+Statuts
+Domiciliation (Convention + lettre Magali)
+Attestation de dépôt de fonds (Banque)
+Liste des souscripteurs (Dossier)
+Attestation de parution
