@@ -18,6 +18,7 @@
 \usepackage{indentfirst}
 \titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{} %Supprime le mot chapitre
 \usepackage{eurosym}
+\usepackage{wrapfig}
 
 \usepackage{color}
 
@@ -134,6 +135,30 @@ Fort de ces constats, nous identifions les besoins précis suivants :
 Pour répondre aux besoins mis en évidence au chapitre précédent, nous découpons notre offre selon deux axes :
 une plateforme robotique modulaire et ouverte d'une part et un service de prestation de soutien aux plateformes à destination des laboratoires publiques d'autre part.
 \subsection{Le robot marcel}
+Le robot marcel est composée d'une base roulante autonome, à la quelle on peut ajouter divers périphériques, capteurs ou actionneurs.
+%Explication et motivation du 100% Hackable et du "réparable plutôt qu'incassable"
+%Ces choix impactent la conception, qui se veut itérative
+%La pédagogie est également au centre de la conception (eg. pointe de test sur carte électronique)
+
+Dans sa version actuelle, la base roulante dispose de deux roues motrices indépendantes et d'une bille omni-directionnelle stabilisatrice.
+Elle mesure 15 centimètres de haut pour 30 centimètres de diamètre environ.
+Elle se construit à base de bois de type MDF découpé au laser, technique courament utilisé dans les Fab Labs.
+Ce choix est crucial car nous voulons mettre en avant une philosophie de \og{}Réparable plutôt qu'incassable\fg{}.
+
+%Mécanique
+%- deux roues motrices indépendantes et une bille stabilisatrice
+%- environ 15cm de haut et 30cm de diamètre
+%- Capteurs d'évitement d'obstacle
+
+
+%\begin{wrapfigure}{R}{0.4\textwidth}
+%	\centering
+%	\includegraphics[width=\linewidth]{\figpath/robot.png}
+%	\caption{\label{fig:frog1}Base roulante Marcel : Prototye \og{}Mireille\fg{}.}
+%\end{wrapfigure}
+
+%Circuit reconfigurable = haute performance/W + grande valeur pédagogique
+
 %La plateforme Marcel
 % - Architecture numérique hautes performances (CPU+FPGA)
 % - Électronique reconfigurable
