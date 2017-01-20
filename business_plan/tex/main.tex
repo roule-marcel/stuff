@@ -135,15 +135,30 @@ Fort de ces constats, nous identifions les besoins précis suivants :
 Pour répondre aux besoins mis en évidence au chapitre précédent, nous découpons notre offre selon deux axes :
 une plateforme robotique modulaire et ouverte d'une part et un service de prestation de soutien aux plateformes à destination des laboratoires publiques d'autre part.
 \subsection{Le robot marcel}
-Le robot marcel est composée d'une base roulante autonome, à laquelle on peut ajouter divers périphériques, capteurs ou actionneurs.
+%%Le robot marcel est composée d'une base roulante autonome, à laquelle on peut ajouter divers périphériques, capteurs ou actionneurs.
 %Explication et motivation du 100% Hackable et du "réparable plutôt qu'incassable"
 %Ces choix impactent la conception, qui se veut itérative
 %La pédagogie est également au centre de la conception (eg. pointe de test sur carte électronique)
+Il nous parraît évident que nos robots seront manipulés de manière intensive par les étudiants, et qu'ils seront largement malemenés, l'erreur faisant partie intégrante de l'apprentissage.
+Nous pensons qu'il est illusoire d'espérer créer un produit indestructible face à cet usage, aussi nous préférons mettre en avant une philosophie de \og{}Réparable plutôt qu'incassable\fg{}.
+
+Dans l'optique de la démocratisation expliquée au chapitre précédent, le robot doit être \emph{100\% Hackable}.
+En d'autres termes, les étudiants doivent pouvoir facilement le démonter, en comprendre le fonctionnement, et y apporter d'éventuelles modifications.
+Ces choix imposent des contraintes supplémentaires, dès la conception du produit.
+L'aspect pédagogique doit également être présent lors de la conception, notamment pour ce qui concerne l'électronique.
+Les signaux importants du système doivent ainsi être accessibles, pour être visualisés à l'aide d'un oscilloscope par exemple.\\
+
+%À l'inévitable question fréquente : "Il fait quoi votre robot", nous répondons "rien".
+%Paragraphe expliquant l'USAGE : programmable en n'importe quel langage, évolutif, exemple d'application (ie: navigation vision, voiture autonome).
+%Le robot n'est pas préprogrammé, mais dispose de toute la documentation nécessaire
+
+Le robot marcel est composé d'une base roulante autonome, à laquelle on peut ajouter divers périphériques, capteurs ou actionneurs.
 
 Dans sa version actuelle, la base roulante dispose de deux roues motrices indépendantes et d'une bille omni-directionnelle stabilisatrice.
 Elle mesure 15 centimètres de haut pour 30 centimètres de diamètre environ.
-Elle se construit à base de bois de type MDF découpé au laser, technique courament utilisé dans les Fab Labs.
-Ce choix est crucial car nous voulons mettre en avant une philosophie de \og{}Réparable plutôt qu'incassable\fg{}.
+Elle se construit à base de bois de type MDF découpé au laser, technique courament utilisée dans les Fab Labs.
+
+Le prototype \og{}Mireille\fg{}, adapté pour distribuer des bonbons lors de la conférence IEEE-EPIROB est représenté à la \figurename~\ref{fig:marcel_mireille}.
 
 %Mécanique
 %- deux roues motrices indépendantes et une bille stabilisatrice
@@ -151,11 +166,11 @@ Ce choix est crucial car nous voulons mettre en avant une philosophie de \og{}R�
 %- Capteurs d'évitement d'obstacle
 
 
-%\begin{wrapfigure}{R}{0.4\textwidth}
-%	\centering
+\begin{wrapfigure}{R}{0.4\textwidth}
+	\centering
 %	\includegraphics[width=\linewidth]{\figpath/robot.png}
-%	\caption{\label{fig:frog1}Base roulante Marcel : Prototye \og{}Mireille\fg{}.}
-%\end{wrapfigure}
+	\caption{\label{fig:marcel_mireille}Base roulante Marcel : Prototye \og{}Mireille\fg{}.}
+\end{wrapfigure}
 
 %Circuit reconfigurable = haute performance/W + grande valeur pédagogique
 
