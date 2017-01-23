@@ -46,6 +46,19 @@
 
 
 \section{Présentation du projet et de l'équipe de management}
+%Ce premier chapitre est fondamental. A coté de la fiche d’identité de l’entreprise et d’une brève description de son métier, 
+%les investisseurs veulent connaître l’équipe de direction et savoir s’ils peuvent leur faire confiance pour mener à bien le projet... 
+%-Quelles sont les compétences réunies ? 
+%-Sont elles suffisantes pour couvrir tous les besoins de l’entreprise ? 
+%-Quelle est l’expérience de l’équipe dans ce secteur ou sur ces produits ou services ? 
+%-A-t-on identifié les compétences clés ne font pas partie de l’équipe initiale ? 
+%-L’équipe a-t-elle déjà travaillé ensemble ? 
+%-Le rôle de chacun est il défini (organisation) ? Y a-t-il un leader ? 
+%-Quel sera leur apport en capital ? 
+%-Quelle est la motivation de chacun ?
+%Enfin, dès ce premier chapitre, il convient de préciser en quelques lignes l’ambition voulue par l'équipe pour l'entreprise. 
+%Ce n’est pas une stratégie mais un objectif à atteindre. 
+
 L'objectif du projet porté par la société Marcel est de démocratiser la robotique de laboratoire.
 L'énoncé de cet objectif seul soulève plusieurs questions : Qu'entend-on par laboratoire ? Quel place y trouve-t-on pour le vaste domaine de la robotique ?
 Que voulons-nous dire par démocratiser, pourquoi, et comment comptons-nous y parvenir ?\\
@@ -132,59 +145,84 @@ Fort de ces constats, nous identifions les besoins précis suivants :
 \end{itemize}
 
 \section{Présentation de l'offre}
+%Avant de présenter le marché, qui fera l’objet du chapitre 3, il convient de détailler ce que l’on va y vendre et de quelle façon. 
+%%Décrire le ou les métiers de l'entreprise ; 
+%%Définir la valeur pour le client :
+%Il faut préciser quels sont les segments clients visés, comment ils sont définis et quelles sont leurs attentes. 
+%Il faut démontrer comment le produit ou service répond mieux que ce qui existe (avantages concurrentiels) aux attentes clients. Quelle valeur est apportée au client.
+%Il faut expliquer ce qui sera fait pour fidéliser les clients dans le long terme et à quel coût.
+%%Présenter le produit ou le service :
+%Il faut décrire l’état d’avancement des éventuels développements.
+%Il faut présenter les partenariats clés nécessaires ou utiles pour le développement ou la commercialisation. A quel stade en sont ils ?
+%Il faut décrire les obligations de maintenance, de service après vente et de garantie à mettre en œuvre. 
+%Il faut prévoir les phases suivantes du produit et les ressources nécessaires pour chaque phase. 
+%%Décrire la situation en terme de protection intellectuelle et de respect de la réglementation :
+%Les avantages concurrentiels sont ils clairs et durablement défendables par un brevet par exemple. 
+%Est-ce que toutes les caractéristiques du produit sont conformes à la réglementation
+%%Définir la politique commerciale et marketing : 
+%Il faut couvrir les 4P (Produits, Prix, Place (distribution), Promotion) en détail et convaincre que la stratégie de pénétration du marché permettra d’atteindre les parts de marché anticipées.
+
 Pour répondre aux besoins mis en évidence au chapitre précédent, nous découpons notre offre selon deux axes :
 une plateforme robotique modulaire et ouverte d'une part et un service de prestation de soutien aux plateformes à destination des laboratoires publiques d'autre part.
-\subsection{Le robot marcel}
-%%Le robot marcel est composée d'une base roulante autonome, à laquelle on peut ajouter divers périphériques, capteurs ou actionneurs.
-%Explication et motivation du 100% Hackable et du "réparable plutôt qu'incassable"
-%Ces choix impactent la conception, qui se veut itérative
-%La pédagogie est également au centre de la conception (eg. pointe de test sur carte électronique)
-Il nous parraît évident que nos robots seront manipulés de manière intensive par les étudiants, et qu'ils seront largement malemenés, l'erreur faisant partie intégrante de l'apprentissage.
+\subsection{Le robot Marcel}
+%TODO points manquants:
+%%Segments client
+%%Positionnement face à la concurrence
+%%Fidélisation client
+%%Partenariats
+%%Évolution (-> conception agile, yo)
+%%Brevet gnagnagna, on va nous casser les couilles la dessus
+Une question récurrente lorsque l'on parle de robotique concerne les usages : \og{}Il fait quoi votre robot ?\fg{}.
+Question à laquelle nous répondons simplement : \og{}Rien !\fg{}.
+
+%Citation (approximative) de JCC et al. : "Expliquez à quoi ça sert, ce qu'on peut faire avec, pas comment c'est fait, à quoi ça ressemble". 
+%Ici, le "comment c'est fait" (caractéristiques, ) fait partie intégrante de "ce qu'on peut faire avec" (usage).
+L'usage du robot Marcel découle directement de sa nature de plateforme d'expérimentation.
+Il n'est pas pré-programmé, et ne dispose que d'un nombre limité de capteurs et d'actionneurs.
+En revanche, il est livré avec toute la documentation nécessaire pour permettre à un étudiant ou à un chercheur de le programmer et de le faire évoluer à l'aide de différents modules.
+Pour permettre au mieux sa démocratisation, il est programmable avec n'importe quel langage de programmation, depuis tous les types de machines.
+%Ça c'est vraiment un point cool par rapport au reste
+%TODO Décrire que c'est un "ordinateur avec des roues" ?
+
+Le robot devient alors une véritable éprouvette, il appartient donc à son utilisateur de se l'approprier et d'en imaginer les missions, les usages.\\
+
+Il nous parraît évident que nos robots seront manipulés de manière intensive, et qu'ils seront largement malmenés, l'erreur faisant partie intégrante de l'apprentissage tout comme de la recherche.
 Nous pensons qu'il est illusoire d'espérer créer un produit indestructible face à cet usage, aussi nous préférons mettre en avant une philosophie de \og{}Réparable plutôt qu'incassable\fg{}.
 
 Dans l'optique de la démocratisation expliquée au chapitre précédent, le robot doit être \emph{100\% Hackable}.
-En d'autres termes, les étudiants doivent pouvoir facilement le démonter, en comprendre le fonctionnement, et y apporter d'éventuelles modifications.
+En d'autres termes, les utilisateurs doivent pouvoir facilement le démonter, en comprendre le fonctionnement, pour y apporter d'éventuelles modifications.
 Ces choix imposent des contraintes supplémentaires, dès la conception du produit.
-L'aspect pédagogique doit également être présent lors de la conception, notamment pour ce qui concerne l'électronique.
-Les signaux importants du système doivent ainsi être accessibles, pour être visualisés à l'aide d'un oscilloscope par exemple.\\
-
-%À l'inévitable question fréquente : "Il fait quoi votre robot", nous répondons "rien".
-%Paragraphe expliquant l'USAGE : programmable en n'importe quel langage, évolutif, exemple d'application (ie: navigation vision, voiture autonome).
-%Le robot n'est pas préprogrammé, mais dispose de toute la documentation nécessaire
-
-Le robot marcel est composé d'une base roulante autonome, à laquelle on peut ajouter divers périphériques, capteurs ou actionneurs.
-
-Dans sa version actuelle, la base roulante dispose de deux roues motrices indépendantes et d'une bille omni-directionnelle stabilisatrice.
-Elle mesure 15 centimètres de haut pour 30 centimètres de diamètre environ.
-Elle se construit à base de bois de type MDF découpé au laser, technique courament utilisée dans les Fab Labs.
-
-Le prototype \og{}Mireille\fg{}, adapté pour distribuer des bonbons lors de la conférence IEEE-EPIROB est représenté à la \figurename~\ref{fig:marcel_mireille}.
-
-%Mécanique
-%- deux roues motrices indépendantes et une bille stabilisatrice
-%- environ 15cm de haut et 30cm de diamètre
-%- Capteurs d'évitement d'obstacle
-
+Nous essayons, dans cette optique, d'avoir au maximum recours à des composants standards, pour faciliter l'approvisionnement.
+L'aspect pédagogique de la plateforme tient également une place centrale dans sa conception.
+On trouvera par exemple des pointes de tests permettant de visualiser les signaux importants sur les cartes électroniques.\\
 
 \begin{wrapfigure}{R}{0.4\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{\figpath/robot.png}
-	\caption{\label{fig:marcel_mireille}Base roulante Marcel : Prototye \og{}Mireille\fg{}.}
+	\caption{\label{fig:marcel_mireille}Base roulante Marcel : Prototype \og{}Mireille\fg{}.}
 \end{wrapfigure}
 
-%Circuit reconfigurable = haute performance/W + grande valeur pédagogique
+Le robot Marcel est composé d'une base roulante autonome, à laquelle on peut ajouter divers périphériques, capteurs ou actionneurs.
 
-%La plateforme Marcel
-% - Architecture numérique hautes performances (CPU+FPGA)
-% - Électronique reconfigurable
-% - Caméra haute résolution (haute vitesse/hyperspectrale/thermique)
-% - Interopérable (ROS, YARP,...)
-% - Modulaire (connectique standard)
-% - Composants standards
-% - Réparable plutôt qu'incassable
-% - Abordable
-% - 100% hackable
-%Communauté Marcel
+Dans sa version actuelle, la base roulante dispose de deux roues motrices indépendantes et d'une bille omni-directionnelle stabilisatrice.
+Elle dispose de capteurs permettant d'éviter les obstacles.
+Elle mesure 15 centimètres de haut pour 30 centimètres de diamètre environ.
+Elle se construit à base de bois de type MDF découpé au laser, technique courament employée, et popularisée par les Fab Labs.
+
+Le prototype \og{}Mireille\fg{}, adapté pour distribuer des friandises à l'occasion de la conférence IEEE ICDL-EPIROB, est représenté à la \figurename~\ref{fig:marcel_mireille}.\\
+
+L'électronique de la base roulante est architecturée autour d'un circuit logique reconfigurable FPGA (\emph{Field Programmable Gate Array}).
+Ce type de circuits est connu pour offrir de hautes performances, sous une consommation énergétique réduite, tout en garantissant flexibilité, extensibilité et modularité.
+Il sont une bonne solution pour munir le robot d'une caméra, et de réaliser tous les traitements visuels dans le robot, tout en garantissant une certaine autonomie à ce dernier.
+De plus, permettre à l'utilisateur la possibilité de personnaliser son architecture numérique, laissera plus de liberté quant à la personnalisation du robot en lui-même.\\
+
+Mais le choix de ce type de composants est également guidé par la grande valeur pédagogique qu'ils véhiculent.
+Les circuits FPGA permettent en effet de descendre beaucoup plus profondément dans la compréhension du fonctionnement des circuits numériques.
+Ils permettent de mettre en évidence toutes les problématiques liées à la discipline de l'architecture des ordinateurs modernes.
+
+%TODO logiciel, interopérabilité
+
+%TODO communauté
 % - Schématique ouverte
 % - Tutoriels en ligne gratuits
 % - Supports de TP collaboratifs
@@ -192,32 +230,46 @@ Le prototype \og{}Mireille\fg{}, adapté pour distribuer des bonbons lors de la 
 \subsection{Les prestations}
 
 \section{Présentation du marché et de la concurrence}
+%La connaissance du marché et de la concurrence est fondamentale pour réussir.
+%Il faut convaincre l’investisseur que l’on connaît ce marché et qu’il est possible d’en capter une part significative. 
+%%Présenter le marché : 
+%Quelle est sa taille ? La croissance prévue ? Quels sont les facteurs qui l’influencent ? Quels sont les facteurs clés de succès sur ce marché ? Quels sont les facteurs décisifs d’achat ? Quelles sont les barrières à l’entrée ?
+%%Segmenter le marché : 
+%Comment se fait la répartition en volume ? Y a-t-il des attentes différentes des clients ? La concurrence est elle la même d’un segment à l’autre ? 
+%%Etudier la concurrence :
+%Qui sont ils ? Combien ? Quelle est leur part de marché et leur santé financière ? Quelles sont leurs forces et faiblesses ? Comment répondent ils aux facteurs clés de succès sur ce marché ? Quel est le positionnement de l’entreprise par rapport à la concurrence ? 
 \section{Présentation du projet de développement}
+%La construction d’un projet de développement passe nécessairement par plusieurs étapes à formaliser : 
+%%L’analyse stratégique :
+%A partir de l’étude de l’existant et de l’environnement, il s’agit de formaliser une stratégie, de présenter le «business model» et de préciser la mission, la vision et les valeurs de l’entreprise.
+%%L’organisation de l’entreprise : 
+%Comment sont et seront organisées les grandes fonctions de l’entreprise ? (construire un organigramme) Que choisit-on de sous traiter ? Qui seront les fournisseurs clés ? Les processus principaux doivent être décrits... 
+%%Le planning de développement :
+%Il convient de détailler les étapes importantes en précisant les délais (qui doivent être réalistes), les points de blocage possibles, le planning des recrutements et le planning des investissements. 
 \section{Analyse des risques}
+%Les risques potentiels doivent être listés de manière relativement large en établissant pour chacun leur impact potentiel sur le projet (délai, coût, résultat) et en présentant des contre-mesures possibles et surtout crédibles.
 \section{Hypothèses financières et prévisions}
+%Contrairement aux idées reçues, ce n’est pas forcément la partie la plus importante. 
+%Elle reste néanmoins indispensable, mais ne doit être réalisée qu’à la fin de l’écriture du «BP». 
+%Tous les chiffres présentés doivent être établis sur la base d’hypothèses réalistes et vérifiables qu’il est judicieux de détailler dans un tableau à part en les commentant. 
+%Plusieurs scénarios peuvent être présentés et chiffrés (idéalement, le pire et le meilleur...) en tenant compte des éventuels retards... 
+%Il faut raisonner en milliers d’euros et éviter les chiffres trop précis (une prévision de 300 K€ est plus crédible que 307 K€ !!!). 
+%Quatre documents prévisionnels doivent être présentés : 
+%%Un plan de trésorerie : 
+%Il doit être établi de façon mensuelle sur une période d’un an (ou deux si cela se justifie). 
+%Il peut être complété d’un calcul du point mort ; 
+%%Un compte de résultats :
+%Il est présenté de façon annuelle, sur 3 à 5 exercices, et doit montrer comment le chiffre d’affaires couvre les charges, en grandes masses ; 
+%%Un tableau de financement :
+%Il est présenté de façon annuelle, sur 3 à 5 exercices et doit mettre en évidence l’évolution du fonds de roulement «FR» et du besoin en fonds de roulement «BFR» ;
+%%Un bilan : 
+%« Idem » sur 3 à 5 exercices... 
+%Par ailleurs, il convient de préciser clairement le montant de la demande de financement et d’en expliquer les raisons et l’utilisation. 
+%Il est recommandé de calculer le retour sur investissement envisagé pour l’investisseur en utilisant la méthode des cash flow actualisés ou « DCF » (voir dossier Acting N°6). 
 \section{Le document de synthèse (Executive summary)}
-
-%\section{Executive Summary}
-%(Résumé) : Une page ou deux grand max
-%\section{Les créateurs}
-%Bilan personnel, points forts points faibles
-%\section{Le projet}
-%\section{Le Business Model}
-%\subsection{Étude de marché}
-%Étude documentaire (panorama du marché), ouverture internationale
-%\subsection{Étude de la concurrence}
-%Concurrents directs, concurrents indirects
-%\subsection{Premier positionnement}
-%Couple produit-marché
-%\subsection{L'étude terrain}
-%\subsection{Chiffre d'affaires prévisionnel}
-%\subsection{Le Business Model}
-%\section{La technologie et sa protection}
-%\section{La stratégie marketing}
-%\section{Les moyens à mettre en oeuvre}
-%\section{Le statut juridique}
-%\section{La structure du capital/Budget prévisionnel}
-%\section{Le chiffrage du projet}
-%\section{Les perspectives d'avenir}
+%Encore appelé «Executive summary», il s’agit de présenter en 2 à 4 pages les points clés du projet. 
+%Si la lecture de ces pages n’éveille pas l’intérêt, il est peu probable que l’investisseur potentiel aille plus loin. 
+%Par contre, s’il est intéressé, il doit pouvoir aller facilement à n’importe quelle partie du «BP» pour fouiller plus avant un point qui l’intéresse, sans être obligé de tout lire à la suite. 
+%Ce document est à placer au début du «BP», avant le sommaire, mais doit être rédigé à la fin, lorsque l’on maîtrise parfaitement son sujet. 
 
 \end{document}
