@@ -180,7 +180,7 @@ L'usage du robot Marcel découle directement de sa nature de plateforme d'expér
 Il n'est pas pré-programmé, et ne dispose que d'un nombre limité de capteurs et d'actionneurs.
 En revanche, il est livré avec toute la documentation nécessaire pour permettre à un étudiant ou à un chercheur de le programmer et de le faire évoluer à l'aide de différents modules.
 Pour permettre au mieux sa démocratisation, il est programmable avec n'importe quel langage de programmation, depuis tous les types de machines.
-%Ça c'est vraiment un point cool par rapport au reste
+Ce point nous différencie des plateformes robotiques didactiques classiques, souvent programmable par un seul langage.
 %TODO Décrire que c'est un "ordinateur avec des roues" ?
 
 Le robot devient alors une véritable éprouvette, il appartient donc à son utilisateur de se l'approprier et d'en imaginer les missions, les usages.\\
@@ -196,13 +196,6 @@ Nous essayons, dans cette optique, d'avoir au maximum recours à des composants 
 L'aspect pédagogique de la plateforme tient également une place centrale dans sa conception.
 On trouvera par exemple des pointes de tests permettant de visualiser les signaux importants sur les cartes électroniques.\\
 
-Nous pouvons diviser la base des utilisateurs en deux catégories principales.
-Dans un premier temps, nous avons les étudiants du supérieur, dans les IUT, les universités ou encore les écoles d'ingénieurs.
-Pour atteindre ce segment d'utilisateurs, nous devons convaincre les professeur et les enseignants-chercheurs dans ces établissements.
-Le second segment d'utilisateurs est directement constitué des chercheurs et des enseignants-chercheurs.\\
-
-%%Positionnement face à la concurrence
-%
 
 \begin{wrapfigure}{R}{0.4\textwidth}
 	\centering
@@ -226,15 +219,25 @@ De plus, permettre à l'utilisateur la possibilité de personnaliser son archite
 
 Mais le choix de ce type de composants est également guidé par la grande valeur pédagogique qu'ils véhiculent.
 Les circuits FPGA permettent en effet de descendre beaucoup plus profondément dans la compréhension du fonctionnement des circuits numériques.
-Ils permettent de mettre en évidence toutes les problématiques liées à la discipline de l'architecture des ordinateurs modernes.
+Ils permettent de mettre en évidence toutes les problématiques liées à la discipline de l'architecture des ordinateurs modernes.\\
 
 %TODO logiciel, interopérabilité
+
+Nous pouvons diviser la base des utilisateurs en deux catégories principales.
+Dans un premier temps, nous avons les étudiants du supérieur, dans les IUT, les universités ou encore les écoles d'ingénieurs.
+Pour atteindre ce segment d'utilisateurs, nous devons convaincre les professeur et les enseignants-chercheurs dans ces établissements.
+Le second segment d'utilisateurs est directement constitué des chercheurs.
+
+Depuis l'invention du premier micro-processeur dans les années 1970, les circuits numériques de plus en plus puissants d'année en année.
+Cette évolution technologique constante impose aux laboratoires et aux écoles de renouveler régulièrement leurs plateformes, pour rester à jour tant en enseignement qu'en recherche.
+Ainsi, une opportunité est ouverte pour concevoir de nouvelles versions de robots de plus en plus performants permettant d'adresser des problématiques de plus en plus intéressantes.\\
 
 %TODO communauté
 % - Schématique ouverte
 % - Tutoriels en ligne gratuits
 % - Supports de TP collaboratifs
 % - Approvisionnement direct-fournisseur
+
 \subsection{Les prestations}
 
 \section{Présentation du marché et de la concurrence}
@@ -246,6 +249,39 @@ Ils permettent de mettre en évidence toutes les problématiques liées à la di
 %Comment se fait la répartition en volume ? Y a-t-il des attentes différentes des clients ? La concurrence est elle la même d’un segment à l’autre ? 
 %%Etudier la concurrence :
 %Qui sont ils ? Combien ? Quelle est leur part de marché et leur santé financière ? Quelles sont leurs forces et faiblesses ? Comment répondent ils aux facteurs clés de succès sur ce marché ? Quel est le positionnement de l’entreprise par rapport à la concurrence ? 
+
+%Un marché peut se définir selon les critères suivants : 
+%- un espace géographique :  international, pays, département...
+%- un espace temps : durée de référence (mensuel, annuel...) et date (par exemple année d'évaluation)
+%- une unité de mesure :  valeur (euros..), volume (nombre de pièces...)
+%- un périmètre usage/produit :  le profil des consommateurs
+%- des sources :  rappeler les sources employées pour l'estimation
+%(http://www.manager-go.com/marketing/dossiers-methodes/potentiel-marche)
+
+%Nombre d'IUT (établissements;étudiants2015-2016): GEII (48;7773), Génie Industriel et Maintenance (25;2005), Génie Mécanique et Productique (42;7566), Info (41;8951)
+%Total : 156;26295 (IUT Total : 116000, soit 23%)
+%(http://www.iut.fr/, http://www.letudiant.fr/etudes/dut.html)
+
+%Nombre d'écoles d'ingé en France (17EEA,8MP,11IMA,64G = 64généralistes, 36 spécialisés (élec, info, méca))
+%Écoles d'ingé total: 210 (soit 48%)
+%(https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000032182535&dateTexte=&categorieLien=id, http://cache.media.enseignementsup-recherche.gouv.fr/file/2015/58/7/NI_15.08_-_Les_effectifs_d_etudiants_dans_le_superieur_en_2014-2015_510587.pdf)
+%Total étudiants : 138600
+%Si on applique les 23% des IUT -> 31878 étudiants
+%Si on applique les 48% des thématiques ingé -> 66528
+%Moyenne de 660étudiants/école.
+
+%Nombre d'universités:
+%75 en 2015
+%"Sciences fondamentales et applications"
+%Licenses : 93353 (+11.8%)
+%Masters : 73181 (+4.4%)
+%Total : 166534 (23%=38302, 48%=79936)
+%(http://cache.media.enseignementsup-recherche.gouv.fr/file/2016/04/3/NI_16.11_-_Etudiants_universites_2015-2016_689043.pdf)
+
+%Total étudiants 23% : 96475
+
+%Croissance
+%+1.6% d'étudiants par an (+38400) +3.2% en sciences +3.1% ingé
 \section{Présentation du projet de développement}
 %La construction d’un projet de développement passe nécessairement par plusieurs étapes à formaliser : 
 %%L’analyse stratégique :
